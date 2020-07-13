@@ -7,9 +7,9 @@ export default function App() {
   const isLogged = useSelector(state => state.isLogged);
   const dispatch = useDispatch();
 
-  if (counter === 5) {
-    dispatch({ type: 'SIGN_IN' });
-  }
+  // if (counter === 5) {
+  //   dispatch({ type: 'SIGN_IN' });
+  // }
 
   return (
     <div>
