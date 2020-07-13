@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement } from './actions/index';
+import { increment, decrement, signIn } from './actions/index';
 
 export default function App() {
   const counter = useSelector(state => state.counter);
@@ -14,6 +14,7 @@ export default function App() {
       <button onClick={() => dispatch(decrement())}>-</button>
 
       {isLogged ? <h3>the secret is true</h3> : <h3>the secret is false</h3>}
+      <button onClick={() => dispatch(signIn())}>Click</button>
     </div>
   );
 }
