@@ -7,11 +7,6 @@ export default function App() {
   const isLogged = useSelector(state => state.isLogged);
   const dispatch = useDispatch();
 
-  if (counter === 5) {
-    dispatch(signIn());
-    dispatch(increment());
-  }
-
   return (
     <div>
       <h1>Counter {counter}</h1>
